@@ -1,7 +1,7 @@
 package mytrackfone.devops.core
 
 
-def cleanup(steps)
+def cleanup()
 {
-    steps.deleteDir()
+    deleteDir()
 }
