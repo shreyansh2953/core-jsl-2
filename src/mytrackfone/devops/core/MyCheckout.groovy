@@ -1,7 +1,7 @@
 package mytrackfone.devops.core
 
 
-def git_Checkout(git_url,branch,steps)
+def git_Checkout(git_url,branch)
 {
-     steps.checkout([$class: 'GitSCM', branches: [[name: "${branch}"]], extensions: [], userRemoteConfigs: [[url: "${git_url}"]]])
+     checkout([$class: 'GitSCM', branches: [[name: "${branch}"]], extensions: [], userRemoteConfigs: [[url: "${git_url}"]]])
 }
